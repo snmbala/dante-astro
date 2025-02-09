@@ -4,7 +4,7 @@ import { allModels } from './.stackbit/models';
 
 const config = defineStackbitConfig({
     stackbitVersion: '~0.7.0',
-    ssgName: 'nextjs',
+    ssgName: 'astro',
     nodeVersion: '18',
     contentSources: [
         new GitContentSource({
@@ -13,16 +13,10 @@ const config = defineStackbitConfig({
             models: allModels,
             assetsConfig: {
                 referenceType: 'static',
-                staticDir: 'public',
-                uploadDir: 'images',
-                publicPath: '/'
+                staticDir: 'src/content',
+                uploadDir: '_images',
+                publicPath: '/src/content'
             }
         })
     ],
-    presetSource: {
-        type: 'files',
-        presetDirs: ['./.stackbit/presets']
-    },
-    styleObjectModelName: 'ThemeStyle'
 });
-export default config;
