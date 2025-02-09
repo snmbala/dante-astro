@@ -1,30 +1,28 @@
-import { defineStackbitConfig } from "@stackbit/types";
-import { GitContentSource } from "@stackbit/cms-git";
+import { defineStackbitConfig } from '@stackbit/types';
+import { GitContentSource } from '@stackbit/cms-git';
+import { allModels } from './.stackbit/models';
 
-export default defineStackbitConfig({
-  stackbitVersion: "~0.6.0",
-  nodeVersion: "18",
-  ssgName: "astro",
-  postInstallCommand: "npm i --no-save @stackbit/types",
-  contentSources: [
-    new GitContentSource({
-      rootPath: "src", // Set rootPath to "src" since your content is inside src/
-      contentDirs: ["src/content"], // Update contentDirs to match your structure
-      models: [
-        {
-          name: "Page",
-          type: "page",
-          urlPath: "/{slug}",
-          filePath: "src/content/pages/{slug}.md", // Adjust filePath to src/content
-          fields: [{ name: "title", type: "string", required: true }]
-        }
-      ],
-      assetsConfig: {
-        referenceType: "static",
-        staticDir: "public",
-        uploadDir: "images",
-        publicPath: "/"
-      }
-    })
-  ]
+const config = defineStackbitConfig({
+    stackbitVersion: '~0.7.0',
+    ssgName: 'nextjs',
+    nodeVersion: '18',
+    contentSources: [
+        new GitContentSource({
+            rootPath: __dirname,
+            contentDirs: ['content'],
+            models: allModels,
+            assetsConfig: {
+                referenceType: 'static',
+                staticDir: 'public',
+                uploadDir: 'images',
+                publicPath: '/'
+            }
+        })
+    ],
+    presetSource: {
+        type: 'files',
+        presetDirs: ['./.stackbit/presets']
+    },
+    styleObjectModelName: 'ThemeStyle'
 });
+export default config;
