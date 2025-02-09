@@ -9,7 +9,7 @@ const config = defineStackbitConfig({
     contentSources: [
         new GitContentSource({
             rootPath: __dirname,
-            contentDirs: ['content'],
+            contentDirs: ['src/content'],
             models: allModels,
             assetsConfig: {
                 referenceType: 'static',
