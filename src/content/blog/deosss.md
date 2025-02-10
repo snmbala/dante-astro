@@ -1,6 +1,6 @@
 ---
 type: Post
-title: Post Title de
+title: This is a example title
 publishDate: '2025-02-10'
 excerpt: dfgdfg
 tags:
