@@ -6,6 +6,7 @@ excerpt: dfgdfg
 tags:
   - theme
   - green
-seo: {}
+seo:
+  title: This is a example title seo
 ---
 this is the content
