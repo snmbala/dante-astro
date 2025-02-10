@@ -14,6 +14,3 @@ seo:
 
 this is the content
 
-
-
-![](/src/content/_images/025f6ab928930b0f1c2f7213fb66f851.jpg)
