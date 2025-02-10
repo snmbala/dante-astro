@@ -6,5 +6,6 @@ excerpt: dfgdfg
 tags:
   - theme
   - green
+seo: {}
 ---
 this is the content
