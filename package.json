@@ -15,17 +15,21 @@
         "@astrojs/rss": "^4.0.11",
         "@astrojs/sitemap": "^3.2.1",
         "@astrojs/tailwind": "^6.0.0",
+        "@astrojs/ts-plugin": "^1.10.4",
         "@fontsource-variable/inter": "^5.1.1",
         "@fontsource-variable/newsreader": "^5.1.1",
         "@stackbit/sdk": "^2.1.16",
         "astro": "^5.2.5",
         "marked": "^15.0.4",
-        "tailwindcss": "^3.4.17"
+        "tailwindcss": "^3.4.17",
+        "tinacms": "^2.6.3"
     },
     "devDependencies": {
-        "@stackbit/cms-git": "^1.0.33",
+        "@stackbit/cms-git": "^1.0.17",
         "@stackbit/types": "^2.1.13",
         "@tailwindcss/typography": "^0.5.15",
+        "@tinacms/cli": "^1.8.3",
+        "@types/node": "^22.13.1",
         "prettier": "^3.4.2",
         "prettier-plugin-tailwindcss": "^0.6.9"
     }

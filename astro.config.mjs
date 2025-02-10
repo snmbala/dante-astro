@@ -6,11 +6,17 @@ import tailwind from '@astrojs/tailwind';
 // https://astro.build/config
 export default defineConfig({
     site: 'https://example.com',
+    server: {
+        port: 3000
+    },
     integrations: [
         mdx(),
         sitemap(),
         tailwind({
             applyBaseStyles: false
         })
-    ]
+    ],
+    devToolbar: {
+        enabled: true
+    }
 });

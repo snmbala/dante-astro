@@ -5,6 +5,8 @@ publishDate: 'Aug 5 2023'
 tags:
   - Guide
 seo:
+  title: About Me
+  description: Learn more about the person behind the website and embark on a journey of inspiration and shared experiences.
   image:
     src: '/post-1.jpg'
     alt: A person standing at the window
