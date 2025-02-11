@@ -33,7 +33,6 @@ export default defineStackbitConfig({
               { name: "title", type: "string", required: true, default: "Post Title" },
               { name: "excerpt", type: "string", required: false },
               { name: "publishDate", type: "date", required: true },
-              { name: "pageType", type: "string", required: false, default: "article" }, // ✅ Added pageType
               { name: "tags", type: "list", required: false, items: { type: "string" } },
               {
                 name: "seo",
