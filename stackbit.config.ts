@@ -19,7 +19,7 @@ export default defineStackbitConfig({
       passthrough: ["/vite-hmr/**"],
     },
   },
-  contentSources: [
+  /* contentSources: [
     new GitContentSource({
       rootPath: __dirname,
       contentDirs: ["src/content/blog"],
@@ -63,5 +63,5 @@ export default defineStackbitConfig({
         publicPath: "/src/content/",
       },
     }),
-  ],
+  ], */
 });
