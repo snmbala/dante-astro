@@ -1,8 +1,9 @@
 ---
+type: Post
 title: Unleashing the Power of Tailwind CSS
 excerpt: In the ever-evolving world of web development, staying on top of the latest trends and tools is essential. One such tool that has gained immense popularity in recent years is Tailwind CSS.
 publishDate: 'Jan 02 2024'
-pageType: post
+pageType: article
 tags:
   - Web
   - Guide

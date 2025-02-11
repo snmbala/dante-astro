@@ -1,8 +1,9 @@
 ---
+type: Post
 title: 'Essential Security Measures Every Web Developer Should Know'
 excerpt: 'Create a post on essential security practices for web developers. Cover topics such as secure coding, HTTPS implementation, and protection against common web vulnerabilities.'
 publishDate: 'October 8 2023'
-pageType: post
+pageType: article
 tags:
   - Security
   - Web

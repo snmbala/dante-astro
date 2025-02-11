@@ -1,8 +1,9 @@
 ---
+type: Post
 title: 'Ensuring Cross-Browser Compatibility for a Seamless User Experience'
 excerpt: A website that functions flawlessly across different browsers not only enhances user satisfaction but also broadens its reach.
 publishDate: 'October 7 2023'
-pageType: post
+pageType: article
 tags:
   - Web
   - UX
